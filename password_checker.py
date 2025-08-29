@@ -14,4 +14,6 @@ def is_valid_password(password):
         return False
     if not any(c.isupper() for c in password):
         return False
+    if not any(c in "!@#$%^&*()-+" for c in password):
+        return False
     return True

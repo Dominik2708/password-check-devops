@@ -12,7 +12,10 @@ def test_lower():
 def test_upper():
 	assert not is_valid_password("testing323")
 
+def test_special():
+	assert is_valid_password("Testidsdsdng12!!!3")
+
 def test_valid():
-	assert is_valid_password("ValidesPasswort123")
-	assert is_valid_password("2TESvalidesPasswort")
+	assert is_valid_password("ValidesPasswort123!")
+	assert is_valid_password("2TESvalidesPasswort!")
 
